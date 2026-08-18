@@ -51,14 +51,14 @@
             </div>
             <p class="timeline-org">Cashia Limited · Nairobi, Kenya</p>
             <ul>
-              <li>Architected orchestration pipelines connecting multiple AI models, internal APIs, and data sources, adopting Model Context Protocol (MCP) standards across Cashia's technology ecosystem.</li>
-              <li>Designed an Agentic Payment MCP server with a mandate/consent layer and policy engine; prototyped gradient-boosted risk scoring, contextual-bandit channel routing, and TF-IDF intent parsing.</li>
-              <li>Built a RAG agent answering customer queries in-app, indexing ~2,200 of ~18,600 pulled support records across 8 categories via sentence-transformers + FAISS.</li>
-              <li>Designed multimodal AI pipelines (text, images, audio, documents) and a knowledge graph layer to enhance contextual reasoning over organisational data.</li>
-              <li>Applied AIOps to observability with Facebook Prophet time-series anomaly detection, surfacing incidents earlier than static thresholds.</li>
-              <li>Deploying on-premise/self-hosted LLM inference on Kubernetes and migrating vector search to pgvector for compliant, data-sensitive workflows.</li>
-              <li>Implementing AI safety and guardrail frameworks: output validation, prompt-injection defence, fail-closed webhook handling.</li>
-              <li>Built and maintain a production Python/FastAPI integration syncing support tickets between Zendesk and Plane.</li>
+              <li>Architected orchestration pipelines connecting multiple AI models, internal APIs, and data sources, standardizing how AI agents interact with tools and services across Cashia's technology ecosystem via Model Context Protocol (MCP).</li>
+              <li>Designed an Agentic Payment MCP server fronting the Cashia payments gateway with a mandate/consent layer and policy engine; prototyped gradient-boosted transaction risk scoring, a contextual-bandit model for payment-channel routing, and TF-IDF intent parsing.</li>
+              <li>Built a RAG agent answering customer queries directly in the Cashia mobile and web app, retrieving resolved cases to generate grounded responses and reduce dependence on human agents; indexed ~2,200 of ~18,600 pulled support records across 8 categories via sentence-transformers and FAISS.</li>
+              <li>Designed multimodal AI pipelines processing text, images, audio, and documents, plus a knowledge graph layer to enhance contextual reasoning over interconnected organisational data.</li>
+              <li>Applied AIOps to observability with Facebook Prophet time-series anomaly detection to forecast metric baselines and flag deviations, surfacing incidents earlier than static thresholds; continues to lead monitoring and observability across the platform.</li>
+              <li>Deploying on-premise/self-hosted LLM inference on Kubernetes and migrating vector search to pgvector so customer and transaction data never leaves approved, compliant infrastructure.</li>
+              <li>Implementing AI safety and guardrail frameworks around production endpoints: output validation, prompt-injection defence, and fail-closed webhook handling.</li>
+              <li>Built and maintain a production Python/FastAPI integration syncing support tickets between Zendesk and Plane, with agent-attributed uploads, scoped project access, and secret-based endpoint authentication.</li>
             </ul>
           </div>
         </article>
@@ -73,13 +73,15 @@
             <p class="timeline-org">Cashia Limited · Nairobi, Kenya</p>
             <ul>
               <li>Owned the full platform engineering and DevSecOps function: cloud infrastructure, CI/CD, observability, security, and developer tooling across all product lines.</li>
-              <li>Architected all AWS infrastructure (EKS, VPC, RDS, ElastiCache, S3, IAM, Route53, ALB, ACM, SQS) via Terraform for zero-drift environments across dev, staging, and production.</li>
-              <li>Implemented GitOps with ArgoCD for all deployments; built CI/CD for Android/iOS (self-hosted Mac Runners) and backend microservices with GitHub Actions.</li>
+              <li>Architected and provisioned all AWS infrastructure (EKS, VPC, RDS, ElastiCache, S3, IAM, Route53, ALB, ACM, SQS) via Terraform for consistent, auditable, zero-drift environments across dev, staging, and production.</li>
+              <li>Managed Cloudflare DNS, WAF rules, and CDN configuration via Terraform, enabling version-controlled DNS changes and hardening security posture at the edge.</li>
+              <li>Deployed and managed production Kubernetes workloads on EKS, including cluster upgrades, node group management, autoscaling, and namespace-level RBAC.</li>
+              <li>Implemented GitOps with ArgoCD for all deployments; built CI/CD for Android/iOS (GitHub Actions, self-hosted Mac Runners) and backend microservices covering linting, tests, image scanning, and progressive rollout.</li>
               <li>Integrated SonarQube, Trivy, and JFrog Artifactory into CI/CD as mandatory SAST, container scanning, and artifact quality gates.</li>
-              <li>Led Monitoring &amp; Observability: standardized Golden Signals via Prometheus, Thanos, Grafana, Loki, Tempo, OpenTelemetry; implemented RUM with Grafana Alloy/Faro and Z-Score anomaly alerting with Istio.</li>
-              <li>Acted as primary Incident Commander for P1/P2 incidents; authored Post-Incident Review (PIR) reports driving sustained service stability.</li>
+              <li>Led Monitoring &amp; Observability: standardized Golden Signals via Prometheus, Thanos, Grafana, Loki, Tempo, OpenTelemetry; implemented RUM with Grafana Alloy/Faro and Z-Score anomaly alerting integrated with Istio.</li>
+              <li>Acted as primary Incident Commander for P1/P2 incidents, routing alerts through Slack, Alertmanager, and Grafana OnCall; authored Post-Incident Review (PIR) reports driving sustained service stability.</li>
               <li>Set up ReportPortal, Robot Framework, and Pact Broker for QA and contract testing across distributed services.</li>
-              <li>Deployed a self-hosted Headscale VPN (GitOps/ArgoCD) enabling zero-trust network access across environments.</li>
+              <li>Deployed a self-hosted Headscale VPN (GitOps/ArgoCD) enabling zero-trust network access across environments, administered via Tailscale device policies.</li>
             </ul>
           </div>
         </article>
@@ -93,11 +95,14 @@
             </div>
             <p class="timeline-org">Safaricom PLC · Nairobi, Kenya</p>
             <ul>
-              <li>Implemented a comprehensive observability stack (OpenTelemetry, Thanos, OpenSearch, Tempo, Grafana) for real-time monitoring across distributed systems.</li>
-              <li>Pioneered Z-Score anomaly detection in Prometheus time-series data integrated with Istio, improving microservice reliability.</li>
-              <li>Designed secure, scalable AWS infrastructure (EKS, EC2, S3, IAM) provisioned via Terraform; built CI/CD with GitLab, Jenkins, and Tekton.</li>
-              <li>Implemented GitOps-based delivery with Flux; integrated SonarQube and Veracode for SAST and security scanning.</li>
-              <li>Managed SonarQube enterprise licensing and audit readiness; conducted regular security assessments and vulnerability scans.</li>
+              <li>Implemented a comprehensive observability stack (OpenTelemetry, Thanos, OpenSearch, Tempo, Grafana) for real-time monitoring and long-term metrics storage across distributed systems.</li>
+              <li>Integrated PagerDuty, Alertmanager, and OpenTelemetry for anomaly detection and alerting, significantly improving incident response.</li>
+              <li>Pioneered Z-Score anomaly detection in Prometheus time-series data integrated with Istio, improving microservice reliability by flagging irregular traffic patterns.</li>
+              <li>Designed secure, scalable AWS infrastructure (EKS, EC2, S3, IAM) provisioned via Terraform; built CI/CD with GitLab, Jenkins, and Tekton, embedding security controls directly into Kubernetes-native pipelines.</li>
+              <li>Implemented GitOps-based delivery with Flux; integrated SonarQube and Veracode for SAST and security scanning early in the development lifecycle.</li>
+              <li>Managed SonarQube enterprise licensing and audit readiness; conducted regular security assessments and vulnerability scans across infrastructure and applications.</li>
+              <li>Participated in capacity planning, analyzing Prometheus and Thanos historical metrics to forecast resource needs for critical services and ensure zero degradation during peak load.</li>
+              <li>Built internal Python and Bash tooling to automate data-processing workflows and application maintenance.</li>
               <li>Set up Robot Framework and Kobiton for QA automation; mentored junior engineers on DevSecOps best practices.</li>
               <li>Delivered two external consultancy engagements via Finsense Africa: KCB Group PLC and Diamond Trust Bank (detailed below).</li>
             </ul>
@@ -114,9 +119,12 @@
             <p class="timeline-org">KCB Group PLC · Nairobi, Kenya</p>
             <ul>
               <li>Led enterprise DevSecOps implementation, designing end-to-end CI/CD pipelines in Azure DevOps across commit, acceptance, release, and rollback stages.</li>
-              <li>Provisioned DevOps tooling on AKS via GitOps (Helm, ArgoCD); integrated SonarQube, Nexus, Harbor, and Pact Broker.</li>
+              <li>Provisioned DevOps tooling on AKS via GitOps (Helm, ArgoCD); deployed SonarQube, Nexus, Harbor, and Pact Broker in production-grade environments.</li>
               <li>Reduced deployment time from hours to minutes through full pipeline automation and automated quality gates.</li>
-              <li>Integrated SAST, SCA, and DAST scanning; established DevOps metrics tracking (deployment frequency, cycle time, MTTR) for data-driven decisions.</li>
+              <li>Enabled on-demand deployments to UAT and Production with integrated testing and governance controls.</li>
+              <li>Integrated SAST, SCA, and DAST security scanning into CI/CD for continuous, early vulnerability detection.</li>
+              <li>Implemented enterprise-grade contract testing with Pact Broker, improving service integration reliability across teams.</li>
+              <li>Established DevOps metrics tracking (deployment frequency, cycle time, MTTR) to support data-driven decisions and reduce change failure rates.</li>
             </ul>
           </div>
         </article>
@@ -131,8 +139,10 @@
             <p class="timeline-org">Diamond Trust Bank (DTB) · Nairobi, Kenya</p>
             <ul>
               <li>Led DevSecOps practice and CI/CD automation implementation across the SDLC, designing pipelines in Azure DevOps on AKS via GitOps.</li>
+              <li>Provisioned DevOps tooling on AKS (Helm, ArgoCD); deployed SonarQube, Nexus, Harbor, and ArgoCD in production-grade environments.</li>
               <li>Designed and integrated a Robot Framework QA pipeline with centralized reporting and code-version traceability.</li>
-              <li>Integrated SAST, SCA, and DAST scanning with governance controls, reducing change failure rates and MTTR.</li>
+              <li>Implemented multi-stage CI/CD pipelines (commit, acceptance, release, rollback) with automated quality gates and governance controls.</li>
+              <li>Integrated SAST, SCA, and DAST scanning, reducing change failure rates and Mean Time to Recovery (MTTR).</li>
             </ul>
           </div>
         </article>
@@ -146,8 +156,10 @@
             </div>
             <p class="timeline-org">Adanian Labs Africa · Nairobi, Kenya</p>
             <ul>
-              <li>Automated infrastructure provisioning with Terraform and CloudFormation for zero-drift deployments.</li>
-              <li>Launched the Ecobba startup product: designed and built the complete Android app and backend using Java, Kotlin, Node.js, Express.js, and MongoDB, with payments, real-time location tracking, and serverless AWS deployment (Lambda, API Gateway).</li>
+              <li>Automated infrastructure provisioning with Terraform and CloudFormation for zero-drift deployments; implemented automated testing frameworks across the development lifecycle.</li>
+              <li>Strengthened application security via security assessments and robust access control, authentication, and encryption measures; devised automated backup and recovery protocols.</li>
+              <li>Launched the Ecobba startup product: designed and built the complete Android app and backend using Java, Kotlin, Node.js, Express.js, and MongoDB, with user registration, secure payments, and real-time location tracking (Google Maps API, Firebase).</li>
+              <li>Deployed backend services on AWS using a serverless architecture (Lambda, API Gateway) for high scalability and operational cost efficiency.</li>
             </ul>
           </div>
         </article>
@@ -161,8 +173,10 @@
             </div>
             <p class="timeline-org">Mobitech Technologies · Nairobi, Kenya</p>
             <ul>
-              <li>Designed intuitive Android UIs following Material Design; integrated RESTful APIs and SQLite persistence.</li>
-              <li>Automated log file analysis with Python scripting; hands-on Linux administration and AWS (EC2, S3, Lambda).</li>
+              <li>Designed intuitive Android UIs following Material Design guidelines; integrated RESTful APIs and SQLite persistence for reliable data storage and real-time updates.</li>
+              <li>Conducted unit and integration testing to ensure application stability and performance; collaborated with backend developers on API requirements.</li>
+              <li>Automated log file analysis with Python scripting to extract key troubleshooting metrics.</li>
+              <li>Gained hands-on Linux administration experience (file permissions, process management, shell scripting) and used AWS (EC2, S3, Lambda) for cloud-based deployment.</li>
             </ul>
           </div>
         </article>
@@ -176,8 +190,10 @@
             </div>
             <p class="timeline-org">EldoHub Innovation Center · Nairobi, Kenya</p>
             <ul>
-              <li>Led development of a cloud-based inventory management system on AWS using a microservices architecture (Node.js, Express.js, MongoDB, React).</li>
-              <li>Containerized and orchestrated services with Docker and Kubernetes; led a team of developers through the SDLC using Jira.</li>
+              <li>Led development of a cloud-based inventory management system on AWS using a microservices architecture (Node.js, Express.js, MongoDB).</li>
+              <li>Developed and maintained front-end systems with React and Material UI for a seamless user experience.</li>
+              <li>Containerized and orchestrated services with Docker and Kubernetes for high availability and scalability; conducted code reviews and automated testing for code quality.</li>
+              <li>Led a team of developers through the SDLC using Jira; applied OWASP and SonarQube security frameworks throughout development.</li>
             </ul>
           </div>
         </article>
