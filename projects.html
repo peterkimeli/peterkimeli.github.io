@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects · Peter Kimeli</title>
+<meta name="description" content="Featured from-scratch AI systems and platform engineering projects built in production at Cashia Limited.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%23ffffff%22/><text x=%2250%22 y=%2260%22 font-family=%22Arial,sans-serif%22 font-weight=%22800%22 font-size=%2244%22 fill=%22%23ef3f68%22 text-anchor=%22middle%22>PK</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="index.html" class="brand"><span class="brand-name">Peter Kimeli</span></a>
+    <nav class="nav" id="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html" class="is-active">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="education.html">Education</a>
+      <a href="contact.html" class="nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section page-section">
+    <div class="container">
+      <p class="section-label">03 · Highlighted Work</p>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-lead">From-scratch AI systems and platform engineering built in production at Cashia Limited.</p>
+
+      <div class="project-grid">
+
+        <article class="project-card">
+          <span class="project-badge">MCP</span>
+          <h3>Agentic Payment MCP Server</h3>
+          <p>Architected an Agentic Payment MCP server fronting the Cashia payments gateway with a mandate/consent layer
+             and policy engine. Prototyped gradient-boosted transaction risk scoring, a contextual-bandit model for
+             payment-channel routing, and TF-IDF intent parsing.</p>
+          <div class="tags"><span>MCP</span><span>Gradient Boosting</span><span>Contextual Bandits</span></div>
+        </article>
+
+        <article class="project-card">
+          <span class="project-badge">RAG</span>
+          <h3>RAG Customer Support Agent</h3>
+          <p>Built a Retrieval-Augmented Generation agent embedded in the Cashia mobile and web app, retrieving resolved
+             cases to generate grounded responses. Pulled ~18,600 support records and indexed ~2,200 across 8 categories
+             using sentence-transformers embeddings and a FAISS vector store.</p>
+          <div class="tags"><span>RAG</span><span>sentence-transformers</span><span>FAISS</span></div>
+        </article>
+
+        <article class="project-card">
+          <span class="project-badge">AIOps</span>
+          <h3>AIOps Anomaly Detection</h3>
+          <p>Applied AIOps to observability, building time-series anomaly detection with Facebook Prophet to forecast
+             metric baselines and automatically flag deviations, surfacing incidents earlier than static thresholds.</p>
+          <div class="tags"><span>Facebook Prophet</span><span>Time-Series</span><span>Observability</span></div>
+        </article>
+
+        <article class="project-card">
+          <span class="project-badge">KG</span>
+          <h3>Knowledge Graph for RAG</h3>
+          <p>Developed a knowledge graph layer integrated with RAG pipelines to enhance contextual reasoning over
+             interconnected organisational data, alongside multimodal pipelines processing text, images, audio, and documents.</p>
+          <div class="tags"><span>Knowledge Graphs</span><span>Multimodal AI</span></div>
+        </article>
+
+        <article class="project-card">
+          <span class="project-badge">LLM</span>
+          <h3>On-Prem LLM Inference</h3>
+          <p>Deploying self-hosted inference for data-sensitive workflows, serving open-source LLMs on Kubernetes and
+             migrating vector search into cluster Postgres (pgvector) so customer and transaction data never leaves
+             approved, compliant infrastructure.</p>
+          <div class="tags"><span>Ollama</span><span>Kubernetes</span><span>pgvector</span></div>
+        </article>
+
+        <article class="project-card">
+          <span class="project-badge">SEC</span>
+          <h3>AI Safety &amp; Guardrails</h3>
+          <p>Implementing AI safety and guardrail frameworks around production endpoints: output validation,
+             prompt-injection defence, and fail-closed webhook handling, drawing on a DevSecOps background to secure
+             AI systems end to end.</p>
+          <div class="tags"><span>Prompt-Injection Defence</span><span>Output Validation</span></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Peter Kimeli. Built with care.</p>
+    <a href="#top" class="back-to-top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

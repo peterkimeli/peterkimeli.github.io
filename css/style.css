@@ -163,6 +163,24 @@ svg{ display:block; }
   padding:5px 11px; border-radius:20px;
 }
 
+/* ---------- Home quick links ---------- */
+.home-links{ padding: 0 0 100px; }
+.home-links-grid{
+  display:grid; grid-template-columns: repeat(3, 1fr); gap:18px;
+}
+.home-link-card{
+  display:block; background: var(--surface); border:1px solid var(--border); border-radius: var(--radius);
+  padding: 26px; transition: transform .2s, box-shadow .2s, border-color .2s;
+  box-shadow: 0 16px 32px -26px rgba(24,20,15,0.18);
+}
+.home-link-card:hover{ transform: translateY(-4px); box-shadow: 0 20px 38px -22px rgba(24,20,15,0.22); border-color: var(--accent-border); }
+.home-link-num{
+  display:inline-block; font-family: var(--font-mono); font-size:12px; font-weight:700;
+  color: var(--accent); margin-bottom:12px;
+}
+.home-link-card h3{ font-size:17px; font-weight:700; margin-bottom:6px; }
+.home-link-card p{ font-size:13.5px; color: var(--text-dim); }
+
 /* ---------- Sections ---------- */
 .section{ padding: 96px 0; position:relative; z-index:1; }
 .section-alt{ background: var(--bg-alt); border-top:1px solid var(--border-soft); border-bottom:1px solid var(--border-soft); }
@@ -342,6 +360,7 @@ svg{ display:block; }
   .edu-grid{ grid-template-columns: 1fr; }
   .cert-grid{ grid-template-columns: repeat(2,1fr); }
   .contact-cards{ grid-template-columns: 1fr; }
+  .home-links-grid{ grid-template-columns: repeat(2,1fr); }
 }
 
 @media (max-width: 720px){
@@ -360,6 +379,7 @@ svg{ display:block; }
   .project-grid{ grid-template-columns: 1fr; }
   .stat-row{ grid-template-columns: repeat(2,1fr); }
   .cert-grid{ grid-template-columns: repeat(2,1fr); }
+  .home-links-grid{ grid-template-columns: 1fr; }
   .timeline{ padding-left:22px; }
   .timeline-dot{ left:-29px; }
   .timeline-item-sub .timeline-dot-sub{ left:-27.5px; }
