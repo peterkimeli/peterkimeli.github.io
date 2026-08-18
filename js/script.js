@@ -19,7 +19,7 @@ nav.querySelectorAll('a').forEach(link => {
 
 // Scroll reveal
 const revealTargets = document.querySelectorAll(
-  '.skill-card, .project-card, .timeline-item, .edu-card, .cert-card, .contact-card, .stat, .home-link-card'
+  '.skill-card, .project-card, .timeline-item, .edu-card, .cert-card, .contact-card, .stat'
 );
 revealTargets.forEach(el => el.classList.add('reveal'));
 
